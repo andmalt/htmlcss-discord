@@ -15,6 +15,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    position: relative;
 }
 #toolbar-logo{
     width: 100%;
@@ -26,7 +27,7 @@ header{
 
 }
 #logo{
-    padding: 18px 12% 0 0;
+    padding: 18px 70px 0 0;
 }
 
 /* barra di navigazione */
@@ -56,7 +57,7 @@ input{
     background-color: white;
     padding: 10px 15px;
     border-radius: 25px;
-    margin: 0 0 0 12%;
+    margin: 0 0 0 70px;
     border: white;
     font-weight: 700;
     cursor: pointer;
@@ -70,12 +71,46 @@ input:active{
     font-size: 12px;
     padding: 12px 19px;
     border-radius: 25px;
-    margin: 0 0 0 12%;
+    margin: 0 0 0 70px;
 }
 
 /*--- testo dell'header ---*/
 
 #content-header{
-    width: 600px;
+    width: 750px;
     text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+#text-head h1{
+    font-size: 60px;
+    padding: 25px 0;
+}
+
+/* pulsanti sotto testo header  */
+.input-bottom button{
+    margin: 30px 30px 0 30px;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+.input-bottom button:nth-of-type(1){
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+}
+.input-bottom button:nth-of-type(1)::before{
+    content: "\2913";
+    padding-right: 3px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.input-bottom button:nth-of-type(2){
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 20px 35px;
 }
