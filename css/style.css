@@ -148,4 +148,10 @@ main .row:nth-of-type(2) {
 .row:nth-of-type(2) .contain h1{
     padding: 60px 10px 10px 0;
 }
-
+.row:nth-of-type(3) .contain img{
+    float: left;
+    padding: 30px 10px 10px 0;
+}
+.row:nth-of-type(3) .contain h1{
+    padding: 60px 10px 10px 0;
+}
