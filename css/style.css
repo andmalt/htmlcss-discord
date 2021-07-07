@@ -9,11 +9,12 @@ body{
 /*------------ contenuto header -----------*/
 header{
     width: 100%;
-    height: 650px;
+    height: 600px;
     background-image: url(../img/jumbo.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
 }
 #toolbar-logo{
     width: 100%;
@@ -70,4 +71,11 @@ input:active{
     padding: 12px 19px;
     border-radius: 25px;
     margin: 0 0 0 12%;
+}
+
+/*--- testo dell'header ---*/
+
+#content-header{
+    width: 600px;
+    text-align: center;
 }
