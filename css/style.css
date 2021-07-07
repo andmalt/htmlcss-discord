@@ -3,3 +3,46 @@
     margin: 0;
     padding: 0;
 }
+/*------------ contenuto header -----------*/
+header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#toolbar-logo{
+    width: 100%;
+    text-align: center;
+}
+#logo,nav,#content-header{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+#logo{
+    padding: 18px 15% 0 0;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 18px 15px;
+    font-size: 20px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+input{
+    background-color: white;
+    padding: 9px 13px;
+    border-radius: 25px;
+    margin: 0 0 0 15%;
+    border: white;
+}
+input:hover{
+    background-color: grey;
+    color: white;
+}
