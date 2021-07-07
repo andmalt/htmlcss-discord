@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /*------------ contenuto header -----------*/
 header{
     width: 100%;
@@ -22,27 +25,49 @@ header{
 
 }
 #logo{
-    padding: 18px 15% 0 0;
+    padding: 18px 12% 0 0;
 }
 
+/* barra di navigazione */
+nav{
+    width: 50%;
+    min-width: 616px;
+}
 nav li{
     display: inline-block;
     list-style-type: none;
     padding: 18px 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 li a{
     text-decoration: none;
     color: white;
 }
+nav li:hover{
+    text-shadow: 5px 5px 10px black;
+}
+nav li:active{
+    font-size: 13px;
+}
+
+/* pulsante */
 input{
     background-color: white;
-    padding: 9px 13px;
+    padding: 10px 15px;
     border-radius: 25px;
-    margin: 0 0 0 15%;
+    margin: 0 0 0 12%;
     border: white;
+    font-weight: 700;
+    cursor: pointer;
 }
 input:hover{
     background-color: grey;
     color: white;
+}
+input:active{
+    font-weight: 500;
+    font-size: 12px;
+    padding: 12px 19px;
+    border-radius: 25px;
+    margin: 0 0 0 12%;
 }
