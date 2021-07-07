@@ -21,30 +21,31 @@ header{
     background-repeat: no-repeat;
     color: white;
     position: relative;
-    min-width: 963px;
+    min-width: 1000px;
 }
 #toolbar-logo{
     width: 100%;
     text-align: center;
 }
-#logo,nav,#content-header{
+#logo,nav,.input-enter{
     display: inline-block;
     vertical-align: middle;
 
 }
 #logo{
-    padding: 18px 70px 0 0;
+    padding: 20px 70px 0 0;
 }
 
 /*--- barra di navigazione ---*/
 nav{
     width: 50%;
     min-width: 616px;
+    padding-top: 10px;
 }
 nav li{
     display: inline-block;
     list-style-type: none;
-    padding: 18px 15px;
+    padding: 20px 15px;
     font-size: 18px;
 }
 li a{
@@ -59,27 +60,24 @@ nav li:active{
 }
 
 /* pulsante */
-input{
+.input-enter{
+    padding: 15px 15px 0 70px;
+    list-style-type: none;
+}
+.input-enter li a{
+    color: black;
     background-color: white;
-    padding: 10px 15px;
-    border-radius: 25px;
-    margin: 0 0 0 70px;
-    border: white;
-    font-weight: 700;
-    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
 }
-input:hover{
-    background-color: grey;
+.input-enter li a:hover{
     color: white;
+    background-color: rgb(190, 190, 190);
 }
-input:active{
-    font-weight: 500;
+.input-enter li a:active{
     font-size: 12px;
-    padding: 12px 19px;
-    border-radius: 25px;
-    margin: 0 0 0 70px;
+    margin-left: 14px;
 }
-
 /*--- testo dell'header ---*/
 
 #content-header{
@@ -109,7 +107,7 @@ input:active{
 }
 .input-bottom button:nth-of-type(1)::before{
     content: "\2913";
-    padding-right: 3px;
+    padding-right: 5px;
     font-size: 16px;
     font-weight: 800;
 }
@@ -123,13 +121,18 @@ input:active{
 
 /*------------- Contenuto de Main ------------- */
 main .row:nth-of-type(2) {
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(212, 212, 212);
+    background-size: 100vw;
+}
+main .row:nth-of-type(4) {
+    background-color: rgb(212, 212, 212);
     background-size: 100vw;
 }
 .row{
     text-align: center;
     width: 100%;  
-    min-width: 963px;
+    min-width: 1000px;
+    padding: 50px 0;
 }
 .contain{
     margin: 0 auto;
