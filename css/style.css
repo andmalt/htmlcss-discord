@@ -6,7 +6,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.clearfix{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
@@ -152,26 +152,58 @@ main .row:nth-of-type(4) {
 .contain{
     margin: 0 auto;
 }
-.row:nth-of-type(1) .contain img{
+.img-cont{
+    width: 60%;
+}
+.text-cont{
+    width: 20%;
+}
+.text-cont h1{
+    padding-bottom: 20px;
+}
+.row:nth-of-type(1) .contain .img-cont{
     float: left;
     padding: 30px 10px 10px 0;
 }
-.row:nth-of-type(1) .contain h1{
+.row:nth-of-type(1) .contain .text-cont{
     padding: 60px 10px 10px 0;
+    float: left;
 }
-.row:nth-of-type(2) .contain img{
+.row:nth-of-type(2) .contain .img-cont{
     float: right;
     padding: 30px 10px 10px 0;
 }
-.row:nth-of-type(2) .contain h1{
-    padding: 60px 10px 10px 0;
+.row:nth-of-type(2) .contain .text-cont{
+    padding: 60px 0 10px 0;
+    float: right;
+    width: 15%;
 }
-.row:nth-of-type(3) .contain img{
+.row:nth-of-type(3) .contain .img-cont{
     float: left;
-    padding: 30px 10px 10px 0;
+    padding: 30px 0 10px 0;
 }
-.row:nth-of-type(3) .contain h1{
+.row:nth-of-type(3) .contain .text-cont{
     padding: 60px 10px 10px 0;
+    float: left;
+    width: 15%;
+}
+.img-b img{
+    display: block;
+    margin: 0 auto;
+}
+.img-b h2{
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px
+
+}
+#f-c-t{
+    width: 35%;
+    margin: 0 auto;
+}
+#f-c-t h1{
+    padding-bottom: 20px;
 }
 
 /*--------- Footer --------- */
